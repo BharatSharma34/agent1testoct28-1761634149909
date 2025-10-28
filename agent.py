@@ -5,7 +5,8 @@ def main(user_prompt, gpt_key):
     """
     Agent that calls the Japanese translation Lambda and explains the translation.
     """
-    lambda_url = "https://jyhtv2lzrk6vue7ovjtbmfotfi0utvxl.lambda-url.eu-north-1.on.aws/"
+    lambda_url = "https://jlz3boo2wgdawr3puaqsfx4zha0lcuib.lambda-url.eu-north-1.on.aws/"
+    
     headers = {"Content-Type": "application/json"}
 
     try:
