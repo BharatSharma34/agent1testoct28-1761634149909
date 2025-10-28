@@ -53,7 +53,7 @@ Explain in English:
 
         return {
             "success": True,
-            "message": "✅ Translation and explanation generated successfully.",
+            "message": f"{explanation}",
             "data": {
                 "original": user_prompt,
                 "japanese": japanese_text,
