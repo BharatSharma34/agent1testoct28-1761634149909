@@ -13,7 +13,6 @@ def main(user_prompt, gpt_key):
         # Step 1: Call translation Lambda
         payload = {"user_prompt": user_prompt, "gpt_key": gpt_key}
         response = requests.post(lambda_url, json=payload, headers=headers, timeout=20)
-        return {"success": False, "message": f"{response}"}
         response.raise_for_status()
         lambda_data = response.json()
 
